@@ -13,6 +13,17 @@ body > * {
   padding-right: 250px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-links {
+  display: flex;
+  gap: 30px;
+}
+
 .header,
 .footer {
   padding-top: 25px;
@@ -21,14 +32,47 @@ body > * {
 }
 
 .main-content-container {
-  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-top: 100px;
   padding-bottom: 150px;
   background-color: #1f2937;
 }
 
+.main-content-container > .main-left {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-content-container > .main-right {
+  flex-basis: 60%;
+  display: flex;
+}
+
+.main-right > .header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* center the image horizontally */
+  align-items: center; /* center the image vertically */
+  overflow: hidden; /* ensure the image doesn't overflow container */
+}
+
+.header-image > img {
+  max-width: 100%; /* maximum width of image is 100% of container */
+  max-height: 100%; /* maximum height of image is 100% of container */
+  width: auto; /* resize width of image while maintaining original aspect ratio */
+  height: auto; /* resize height of image while maintaining original aspect ratio */
+  object-fit: contain; /* fits image inside of container while maintining original aspect ratio */
+}
+
 .information-container {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-color: white;
 }
 
@@ -46,6 +90,13 @@ body > * {
 
 button {
   background-color: #3882f6;
+  padding: 10px 30px;
+  font-family: Roboto;
+  color: #f9faf8;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  border-style: hidden;
 }
 
 .banner > button {
@@ -54,7 +105,7 @@ button {
 
 .header-logo {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   color: #f9faf8;
 }
 
@@ -67,16 +118,6 @@ button {
   text-decoration: none;
   color: #e5e7eb;
   font-weight: 300;
-}
-
-.header-image {
-  width: 400px;
-  aspect-ratio: 16/9;
-}
-
-.header-image > img {
-  width: 100%;
-  height: 100%;
 }
 
 .main-text {
