@@ -8,6 +8,42 @@ body {
   background-color: gray;
 }
 
+body > * {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.header,
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #1f2937;
+}
+
+.main-content-container {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  background-color: #1f2937;
+}
+
+.information-container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+.quote-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e5e7eb;
+}
+
+.banner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
 button {
   background-color: #3882f6;
 }
