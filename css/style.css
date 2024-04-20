@@ -71,9 +71,43 @@ body > * {
 }
 
 .information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: white;
+}
+
+.information-container > .items {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.items > .information-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.information-item > * {
+  width: 250px;
+}
+
+.information-item > img {
+  aspect-ratio: 1/1;
+  border: 2px solid #3882f6;
+  border-radius: 20px;
+}
+
+.information-item > .secondary-text {
+  color: #1f2937;
 }
 
 .quote-container {
@@ -131,17 +165,6 @@ button {
   font-size: 36px;
   font-weight: 700;
   color: #1f2937;
-}
-
-.information-item {
-  width: 175px;
-  height: 175px;
-}
-
-.information-item > img {
-  border: 2px solid #3882f6;
-  width: 50%;
-  height: 50%;
 }
 
 .quote-text {
